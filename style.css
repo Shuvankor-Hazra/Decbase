@@ -1,0 +1,249 @@
+/* 
+Google-font
+*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap');
+/* 
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; 
+*/
+
+
+/* 
+Basic CSS
+*/
+body{ 
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: #646464;
+    line-height: 1.7;
+}
+h1,
+h2,
+h3,
+h4{
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 500;
+    color: #212121;
+}
+.theme-button{
+    text-decoration: none;
+    display: ;
+    background-color: #37806b; 
+    text-transform: capitalize;
+    color: #fff; 
+    border-radius: 15px 0px;
+    padding: 10px 20px;
+    transition: 0.2s;
+}
+.theme-button:hover{
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #caa892; 
+    text-transform: capitalize;
+    color: black; 
+    border-radius: 15px 0px;
+    padding: 10px 20px;
+}
+.design-image{
+    position: relative;
+    z-index: 1;
+}
+.design-image::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    left: 30px;
+    top: 30px;
+    z-index: -1;
+    border-radius: 140px 0px;
+    border: 10px solid #B0855B;
+}
+
+/* 
+Header area CSS
+*/
+.header-area{
+    padding: 30px 0;
+}
+.header-area .nav-item{
+    margin-left: 30px;
+}
+.header-area .nav-link{
+    text-transform: uppercase;
+    color: #111;
+    font-weight: 600;
+}
+.header-area .nav-link.active{
+    color: #646464;
+}
+.header-area .nav-item:last-child{
+    margin-left: 45px;
+}
+.header-area .nav-item:last-child .nav-link{
+    background-color: #caa892; 
+    text-transform: capitalize;
+    color: #fff; 
+    border-radius: 15px 0px;
+    padding: 10px 20px;
+    transition: 0.2s;
+}
+.header-area .nav-item:last-child .nav-link:hover{
+    font-size: 18px;
+    background-color: #37806b; 
+    text-transform: capitalize;
+    color: #fff; 
+    border-radius: 15px 0px;
+    padding: 10px 20px;
+}
+
+
+@media (max-width: 991px){
+    .header-area .nav-item:last-child{
+        margin-left: 5px;
+    }
+    .header-area .nav-item:last-child .nav-link{
+        text-align: center;
+    }
+    .header-area .nav-item{
+        margin-left: 5px;
+        align-items: center;
+    }
+}
+
+
+/* 
+Hero area CSS
+*/
+.hero-area{
+    padding: 60px 0;
+}
+.hero-text h3{
+    font-size: 20px;
+    color: #646464;
+    text-transform: uppercase;
+}
+.hero-text h2{
+    font-size: 60px;
+    color: #212121;
+    text-transform: capitalize;
+}
+.hero-text a{
+    display: inline-block;
+    margin-top: 20px;
+}
+.hero-image img{
+    width: 100%;
+    border-radius: 140px 0px;
+}
+
+@media (max-width: 991px){
+    .hero-area{
+        text-align: center;
+        font-size: 15px;
+    }
+    .hero-text{
+        margin-top: 80px;
+    }
+    .hero-image img{
+        width:100%;
+    }
+    .hero-area-image{
+        order: -1;
+    }
+}
+
+
+/* 
+Footer area CSS
+*/
+.footer-area{
+    background-color: #f8f8f8;
+    position: relative;
+}
+.footer-top{
+    padding-top: 90px;
+    padding-bottom: 70px;
+}
+.footer-about img{
+    margin-bottom: 15px;
+}
+.footer-link h3{
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.footer-link address{
+    line-height: 2.2;
+}
+.footer-area ul{
+    margin: 0;
+    padding: 0;
+}
+.footer-area ul li{
+    list-style: none;
+}
+.footer-area ul li a{
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    color: #646464;
+    transition: 0.2s;
+}
+.footer-area ul li a:hover{
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    color: #37806b;
+    font-size: 15px;
+}
+.social-link a i{
+    font-size: 20px;
+    background-color: #d5d5d5;
+    color: #f8f8f8;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: 0.2s;
+}
+.social-link a i:hover{
+    font-size: 25px;
+    background-color: #37806b;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.footer-bottom{
+    border-top: 1px solid #c4c4c4;
+}
+.footer-bottom-text a{
+    text-decoration: none;
+    color: #37806b;
+}
+.design img{
+    height: 100px;
+}
+.design{
+    position: absolute;
+    top: -50px;
+}
+
+@media (max-width: 991px){
+    .footer-area{
+        background-color: #f8f8f8;
+        text-align: center;
+        line-height: 30px;
+    }
+    .footer-top .footer-link h3{
+        padding-top: 15px;
+    }
+    .social-link a{
+        margin-top: 50px;
+    }
+    .social-link h3{
+        margin-bottom: 30px;
+    }
+}
