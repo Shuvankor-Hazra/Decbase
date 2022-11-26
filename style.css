@@ -28,7 +28,7 @@ h4{
 }
 .theme-button{
     text-decoration: none;
-    display: ;
+    display: inline-block;
     background-color: #37806b; 
     text-transform: capitalize;
     color: #fff; 
@@ -110,7 +110,11 @@ Header area CSS
         margin-left: 5px;
         align-items: center;
     }
-}
+    .header-area .navbar-toggler{
+        box-shadow: none;
+        border: none;
+    } 
+} 
 
 
 /* 
