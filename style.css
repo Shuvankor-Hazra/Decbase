@@ -62,13 +62,13 @@ h4{
 .design-image::after{
     position: absolute;
     content: "";
-    height: 100%;
-    width: 100%;
-    left: 30px;
-    top: 30px;
+    bottom: -20px;
+    left: 20px;
+    right: -20px;
+    top: 20px;
     z-index: -1;
     border-radius: 140px 0px;
-    border: 10px solid #B0855B;
+    border: 5px solid #B0855B;
 }
 
 .design-image-two{
@@ -85,11 +85,11 @@ h4{
     content: "";
     height: 100%;
     width: 100%;
-    left: -30px;
-    top: -30px;
+    left: -20px;
+    top: -20px;
     z-index: -1;
     border-radius: 140px 0px;
-    border: 10px solid #B0855B;
+    border: 5px solid #B0855B;
 }
 
 .section-heading h4{
@@ -111,6 +111,27 @@ h4{
     -webkit-background-clip: text;
     color: transparent;
     background-position: center;
+}
+
+@media (max-width: 991px){
+    .design-image{
+        padding-right: 20px;
+    }
+    .design-image::after{
+        left: 20px;
+        right: 0;
+        top: 20px;
+        bottom: -20px;
+    }
+    .design-image-two{
+        padding-right: 20px;
+    }
+    .design-image-two::after{
+        left: 20px;
+        right: 0;
+        top: 20px;
+        bottom: -20px;
+    } 
 }
 
 /* 
@@ -199,14 +220,11 @@ Hero area CSS
         text-align: center;
         font-size: 15px;
     }
-    .hero-text{
-        margin-top: 80px;
-    }
-    .hero-image img{
-        width:80%;
-    }
     .hero-area-image{
         order: -1;
+    }
+    .hero-area h3{
+        padding-top: 40px;
     }
 }
 
@@ -262,6 +280,19 @@ Service area  CSS
     margin-bottom: 0;
 }
 
+
+@media (max-width: 991px){
+    .service-area{
+        text-align: center;
+        font-size: 15px;
+    }
+    .service-area-image{
+        order: -1;
+    }
+    .service-area h3{
+        padding-top: 40px;
+    }
+}
 
 /* 
 About area CSS
@@ -466,6 +497,51 @@ Blog area CSS
     margin-top: 50px;
 }
 
+/* 
+Signup area CSS
+*/
+.signup-area{
+    padding: 100px 0;
+}
+.signup-text h3{
+    font-size: 48px;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    position: relative;
+}
+
+.signup-text h3::after{
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 400px;
+    background-color: #c4c4c4;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.signup-text p{
+    margin-bottom: 45px;
+}
+.signup-area .form-control{
+    background-color: #eee;
+    border: none;
+    font-size: 15px;
+    border-radius: 20px 0 0 0;
+    padding: 10px 15px;
+}
+.signup-area button {
+    border: none;
+    background-color: #37806b;
+    color: #fff;
+    border-radius: 0 0 20px 0;
+    padding: 10px 40px;
+}
+.signup-area button:hover{
+    background-color: #B0855B;
+    color: #111;
+}
 
 /* 
 Footer area CSS
