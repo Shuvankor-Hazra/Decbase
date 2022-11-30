@@ -56,6 +56,7 @@ h4{
 
 .design-image img{
     border-radius: 140px 0px;
+    width: 100%;
 }
 
 .design-image::after{
@@ -202,7 +203,7 @@ Hero area CSS
         margin-top: 80px;
     }
     .hero-image img{
-        width:100%;
+        width:80%;
     }
     .hero-area-image{
         order: -1;
@@ -362,6 +363,109 @@ Work area CSS
 .special{
     margin-top: 100px;
 }
+
+/* 
+Testimonial area CSS
+*/
+.testimonial-area{
+    padding: 100px 0;
+    position: relative;
+}
+
+.testimonial-area .all-testimonial{
+    margin-top: 70PX;
+    position: relative;
+}
+.single-testimonial{
+    padding: 20px;
+}
+.testimonial-content{
+    display: flex;
+    position: relative;
+    padding: 40px;
+    z-index: 1;
+    padding-left: 0;
+}
+
+.testimonial-content::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 65px;
+    z-index: -1;
+    background: #FFFFFF;
+    box-shadow: 5px 5px 15px 5px rgba(66, 96, 84, 0.15);
+    border-radius: 70px 0px;
+}
+
+.testimonial-image{
+    margin-right: 20px;
+}
+.testimonial-image img{
+    width: 130px !important;
+    height: 130px;
+}
+
+.testimonial-text h3{
+    font-size: 24px;
+}
+
+.testimonial-text h3 span{
+    font-size: 16px;
+    color: #646464;
+}
+
+.icon-img{
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}
+
+.icon-img img{
+    width: 25px;
+    height: auto;
+}
+
+.testimonial-area .owl-nav{
+    position: absolute;
+    right: 0;
+    top: -80px;
+}
+.testimonial-area .owl-nav span{
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #646464;
+    box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.2s;
+}
+.testimonial-area .owl-nav span:hover{
+    background-color: #37806b;
+    color: #fff;
+}
+.testimonial-area .owl-next{
+    margin-left: 15px;
+}
+
+/* 
+Blog area CSS
+*/
+.blog-area{
+    padding: 100px 0;
+    background-color: #f8f8f8;
+}
+
+.blog-area .section-heading{
+    margin-bottom: 70px;
+}
+.blog-text{
+    margin-top: 50px;
+}
+
 
 /* 
 Footer area CSS
