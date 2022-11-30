@@ -61,8 +61,8 @@
     <!-- End header area -->
     <!-- Start main area -->
     <main class="main-area">
-      <!-- Start hero area -->
-      <section class="hero-area">
+    <!-- Start hero area -->
+    <section class="hero-area">
         <div class="container">
           <div class="row">
             <div class="col-lg-6 d-flex align-items-center">
@@ -87,10 +87,10 @@
             </div>
           </div>
         </div>
-      </section>
-      <!-- End hero area -->
-      <!-- Start service area -->
-      <section class="seervice-area">
+    </section>
+    <!-- End hero area -->
+    <!-- Start service area -->
+    <section class="service-area">
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
@@ -162,9 +162,9 @@
         <div class="design">
           <img src="assets/img/group.png" alt="">
         </div>
-      </section>
-      <!-- Start about area -->
-      <section class="about-area">
+    </section>
+    <!-- Start about area -->
+    <section class="about-area">
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
@@ -192,10 +192,10 @@
             </div>
           </div>
         </div>
-      </section>
-      <!-- End about area -->
-      <!-- Start success area -->
-      <section class="success-area">
+    </section>
+    <!-- End about area -->
+    <!-- Start success area -->
+    <section class="success-area">
         <div class="container">
           <div class="row">
             <div class="col-lg-6 d-flex align-items-center">
@@ -221,10 +221,10 @@
         <div class="design">
           <img src="assets/img/group.png" alt="">
         </div>
-      </section>
-      <!-- End success area -->
-      <!-- Start work area -->
-      <section class="work-area">
+    </section>
+    <!-- End success area -->
+    <!-- Start work area -->
+    <section class="work-area">
         <div class="container">
           <div class="row">
             <div class="col-lg-8 offset-lg-2">
@@ -269,10 +269,10 @@
             </div>
           </div>
         </div>
-      </section>
-      <!-- End work area -->
-      <!-- Start testimonial area -->
-      <section class="testimonial-area">
+    </section>
+    <!-- End work area -->
+    <!-- Start testimonial area -->
+    <section class="testimonial-area">
         <div class="container">
           <div class="row">
             <div class="col-lg-6 offset-lg-3">
@@ -288,7 +288,7 @@
                 <div class="single-testimonial">
                   <div class="testimonial-content">
                     <div class="testimonial-image">
-                      <img src="assets/img/tetimonial-one.png" alt="">
+                      <img src="assets/img/testimonial-one.png" alt="">
                     </div>
                     <div class="testimonial-text">
                       <h3>Louis Saville <span>/CEO at Google inc</span></h3>
@@ -320,7 +320,7 @@
                 <div class="single-testimonial">
                   <div class="testimonial-content">
                     <div class="testimonial-image">
-                      <img src="assets/img/tetimonial-one.png" alt="">
+                      <img src="assets/img/testimonial-one.png" alt="">
                     </div>
                     <div class="testimonial-text">
                       <h3>Louis Saville <span>/CEO at Google inc</span></h3>
@@ -356,10 +356,10 @@
         <div class="design">
           <img src="assets/img/group.png" alt="">
         </div>
-      </section>
-      <!-- End testimonial area -->
-       <!-- Start blog area -->
-       <section class="blog-area">
+    </section>
+    <!-- End testimonial area -->
+    <!-- Start blog area -->
+    <section class="blog-area">
         <div class="container">
           <div class="row">
             <div class="col-lg-6 offset-lg-3">
@@ -386,10 +386,10 @@
             <div class="col-lg-6">
               <div class="single-blog">
                 <div class="blog-image design-image">
-                  <img src="assets/img/blog-one.png" alt="">
+                  <img src="assets/img/blog-two.png" alt="">
                 </div>
                 <div class="blog-text">
-                  <h3>2020 Interior Design Trends</h3>
+                  <h3>28 Notable Product at ARC Interior Design</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     incididunt ut labore et dolore magna aliqua.</p>
                     <a href="#" class="theme-button">CONTINUE READING....</a>
@@ -398,10 +398,10 @@
             </div>
           </div>
         </div>
-       </section>
-       <!-- End blog area -->
-       <!-- Start signup area -->
-       <section class="signup-area">
+    </section>
+    <!-- End blog area -->
+    <!-- Start signup area -->
+    <section class="signup-area">
         <div class="container">
           <div class="row">
             <div class="col-lg-6 offset-lg-3 text-center">
@@ -425,8 +425,8 @@
             </div>
           </div>
         </div>
-       </section>
-       <!-- End signup area -->
+    </section>
+    <!-- End signup area -->
     </main>
     <!-- End main area -->
     <!-- Start footer area -->
@@ -521,18 +521,21 @@
             loop:true,
             margin:2,
             responsiveClass:true,
-            nav:true,
-            dots:false,
             responsive:
             {
               0:{
                 items:1,
+                dots:true,
+                nav:false,
               },
               600:{
-                items:2,
+                items:1,
+                dots:true,
+                nav:false,
               },
               1000:{
                 items:3,
+                nav:true,
               }
             }
           })
@@ -542,18 +545,22 @@
             loop:true,
             margin:30,
             responsiveClass:true,
-            nav:true,
-            dots:false,
             responsive:
             {
               0:{
                 items:1,
+                dots:true,
+                nav:false,
               },
               600:{
-                items:2,
+                items:1,
+                dots:true,
+                nav:false,
               },
               1000:{
                 items:2,
+                dots:false,
+                nav:true,
               }
             }
           })

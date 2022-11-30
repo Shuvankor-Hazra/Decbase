@@ -231,7 +231,7 @@ Hero area CSS
 /* 
 Service area  CSS
 */
-.seervice-area{
+.service-area{
     padding: 100px 0;
     position: relative;
 }
@@ -239,12 +239,12 @@ Service area  CSS
     margin-top: 60px;
     position: relative;
 }
-.seervice-area .owl-nav{
+.service-area .owl-nav{
     position: absolute;
     right: 0;
     top: -80px;
 }
-.seervice-area .owl-nav span{
+.service-area .owl-nav span{
     height: 30px;
     width: 30px;
     display: inline-block;
@@ -254,11 +254,11 @@ Service area  CSS
     box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
     transition: 0.2s;
 }
-.seervice-area .owl-nav span:hover{
+.service-area .owl-nav span:hover{
     background-color: #37806b;
     color: #fff;
 }
-.seervice-area .owl-next{
+.service-area .owl-next{
     margin-left: 15px;
 }
 .single-service{
@@ -280,17 +280,31 @@ Service area  CSS
     margin-bottom: 0;
 }
 
-
 @media (max-width: 991px){
     .service-area{
         text-align: center;
+        padding: 30px 0;
         font-size: 15px;
+    }
+    .section-heading h3{
+        padding-top: ;
     }
     .service-area-image{
         order: -1;
     }
     .service-area h3{
         padding-top: 40px;
+    }
+    .service-area .owl-dots button{
+        height: 15px;
+        width: 15px;
+        background-color: #37806b;
+        display: inline-block;
+        border-radius: 50%;
+        margin: 5px;
+    }
+    .service-area .owl-dots button.active{
+        background-color: #B0855B;
     }
 }
 
@@ -299,6 +313,9 @@ About area CSS
 */
 .about-area{
     padding: 100px 0;
+}
+.about-area p{
+    padding: 20px 0;
 }
 
 
@@ -413,7 +430,7 @@ Testimonial area CSS
 .testimonial-content{
     display: flex;
     position: relative;
-    padding: 40px;
+    padding: 40px ;
     z-index: 1;
     padding-left: 0;
 }
@@ -440,6 +457,8 @@ Testimonial area CSS
 }
 
 .testimonial-text h3{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
     font-size: 24px;
 }
 
@@ -450,12 +469,12 @@ Testimonial area CSS
 
 .icon-img{
     position: absolute;
-    right: 40px;
-    top: 40px;
+    right: 30px;
+    top: 30px;
 }
 
 .icon-img img{
-    width: 25px;
+    width: 30px !important;
     height: auto;
 }
 
@@ -480,6 +499,37 @@ Testimonial area CSS
 }
 .testimonial-area .owl-next{
     margin-left: 15px;
+}
+
+@media (max-width: 991px){
+    .testimonial-content{
+        padding: 40px 20px;
+    }
+    .testimonial-content .icon-img{
+        top: 20px;
+        right: 20px;
+    }
+    .single-testimonial h3{
+        padding-top: 35px;
+    }
+    .single-testimonial p{
+        margin-bottom: 0px;
+        margin-top: 30px;
+    }
+    .testimonial-area .owl-dots{
+        text-align: center;
+    }
+    .testimonial-area .owl-dots button{
+        height: 15px;
+        width: 15px;
+        background-color: #37806b;
+        display: inline-block;
+        border-radius: 50%;
+        margin: 5px;
+    }
+    .testimonial-area .owl-dots button.active{
+        background-color: #B0855B;
+    }
 }
 
 /* 
